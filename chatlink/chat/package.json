@@ -1,0 +1,33 @@
+{
+  "name": "chatlink",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "pro-build": "vue-cli-service build --mode production",
+    "pro-serve": "vue-cli-service serve --mode production",
+    "test-build": "vue-cli-service build --mode test",
+    "test-serve": "vue-cli-service serve --mode test"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.4.5",
+    "js-md5": "^0.7.3",
+    "qrcodejs2": "^0.0.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1",
+    "vuex-persistedstate": "^2.5.4"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-service": "^3.1.1",
+    "babel-plugin-component": "^1.1.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "vue-cli-plugin-element": "^1.0.1",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

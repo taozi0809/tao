@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>pay</title>
+  </head>
+  <body>
+
+    <noscript>
+      <strong>We're sorry but pay doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.14&key=b07d1450c47cab54df0447cdd39aa732"></script>
+    <script type="text/javascript">
+        var ip = returnCitySN["cip"]
+        localStorage.setItem('ip', ip)
+        // console.log(ip)
+        AMap.plugin('AMap.CitySearch', function () {
+            var citySearch = new AMap.CitySearch()
+            citySearch.getLocalCity(function (status, result) {
+                if (status === 'complete' && result.info === 'OK') {
+                    // 查询成功，result即为当前所在城市信息
+                    // console.log(result)
+                    var coordinate={
+                        lon:result.bounds.xc.lng,
+                        lat:result.bounds.xc.lat
+                    }
+                    localStorage.setItem('coordinate', JSON.stringify(coordinate))
+                }
+            })
+        })
+    </script>
+    <!--生产-->
+    <script src="https://www.paypal.com/sdk/js?client-id=AeVmU1oP609F2vp_kQQqvu4TiKmLHOjoKKe_JhOp-Yt842r0FMNLT-a4oBJg0ZeeNObwwOwPcXL6QKvx&disable-funding=credit,card"></script>
+    <!--沙盒-->
+    <!--<script src="https://www.paypal.com/sdk/js?client-id=AcFgXh6LrgOLFSvSrnEjVltdeqydJH7Er6cUI78fXhoKpgO6-EC6nGEcopoImn9U5ivU9t2tjWayYTt4&disable-funding=credit,card"></script>-->
+
+  </body>
+</html>

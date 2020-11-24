@@ -1,0 +1,10 @@
+export const LANG = 'LANG'
+export const ISLOGIN = 'ISLOGIN'
+export const LOGINTYPE = 'LOGINTYPE'
+export const USERINFO = 'USERINFO'
+export const LANGLIST = 'LANGLIST'
+export const VIDEOGENRELIST = 'VIDEOGENRELIST'
+export const COUNTRY = 'COUNTRY'
+export const STARTLOAD = 'STARTLOAD'
+export const SEARCH = 'SEARCH'
+

@@ -1,0 +1,29 @@
+html,body{height:100%;background: #f0f2f5;}
+body{
+  font-family:Lantinghei SC, "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+}
+ul{margin: 0;padding: 0;}
+li{margin: 0;padding: 0;}
+p{margin: 0;padding: 0;}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+img{
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+ul li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+input{border: 0;
+  outline: none;}

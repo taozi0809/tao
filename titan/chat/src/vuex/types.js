@@ -1,0 +1,22 @@
+export const TOKEN ='TOKEN'
+export const USERINFO ='USERINFO'
+export const ACCOUNT ='ACCOUNT'
+export const NAV ='NAV'
+export const STATUS ='STATUS'
+export const ISUSERINFOMENU ='ISUSERINFOMENU'
+export const FRIENDRELATIONAPPLYS ='FRIENDRELATIONAPPLYS'
+export const MESSAGELIST ='MESSAGELIST'
+export const FRIENDLIST ='FRIENDLIST'
+export const FRIENDMARKLIST ='FRIENDMARKLIST'
+export const GROUPLIST ='GROUPLIST'
+export const CHATSTATUS ='CHATSTATUS'
+export const CHATINFO ='CHATINFO'
+export const ISCHATINFODES ='ISCHATINFODES'
+export const CHATINFOINDEX ='CHATINFOINDEX'
+export const POPOVER ='POPOVER'
+export const PACKETINFO ='PACKETINFO'
+export const TOPLIST ='TOPLIST'
+
+
+
+

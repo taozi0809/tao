@@ -1,0 +1,28 @@
+{
+  "name": "guessa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "better-scroll": "^1.15.0",
+    "cssnano": "^4.1.10",
+    "fastclick": "^1.0.6",
+    "js-md5": "^0.7.3",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-px-to-viewport": "^1.1.0",
+    "vue": "^2.6.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.1.1",
+    "@vue/cli-service": "^3.1.1",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.1.0",
+    "swiper": "^4.5.0",
+    "vue-template-compiler": "^2.5.21"
+  }
+}

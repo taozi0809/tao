@@ -1,0 +1,25 @@
+body{
+  font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
+  font-size: 15px;
+}
+.van-picker{
+  z-index: 100 !important;
+}
+.px23{
+  width: 23px;
+  height: 23px;
+  overflow: hidden;
+  display: block;
+  img{
+    width: 100%;
+  }
+}
+.p15{
+  color: #1B1B1B;
+  font-size: 15px;
+}
+.p17{
+  color: #000;
+  font-size: 17px;
+  font-weight: bold;
+}

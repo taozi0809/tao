@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118996504-3"></script>
+      <!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+      <!--<ins class="adsbygoogle"-->
+           <!--style="display:block; text-align:center;"-->
+           <!--data-ad-layout="in-article"-->
+           <!--data-ad-format="fluid"-->
+           <!--data-ad-client="ca-pub-5214131895967416"-->
+           <!--data-ad-slot="2720610456"></ins>-->
+      <!--<script>-->
+          <!--(adsbygoogle = window.adsbygoogle || []).push({});-->
+      <!--</script>-->
+
+
+   <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-118996504-3');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--<meta name="description" content="Watch all the most popular Chinese TV Dramas, Variety Shows and Movies for FREE! Stream your favourite Chinese programmes in HD anytime, anywhere. The latest on-demand Chinese TV dramas and variety programs have multi-language subtitles, with an endless variety of choices ready for your viewing enjoyment.">-->
+    <!--<meta name="Keywords" content="chinese dramas,chinese movies,watch chinese drama online,chinese movies online,watch chinese movies online,popular chinese drama 2019,chinese movie streaming">-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!--<title>Watch Free Chinese Dramas and Movies Online - Vidfish</title>-->
+    <link rel="stylesheet" href="https://vidfish.com/static/css/tcplayer.css">
+    <link rel="stylesheet" href="https://vidfish.com/static/css/intlTelInput.css">
+    <link rel="stylesheet" href="https://vidfish.com/static/css/playr.css">
+  </head>
+  <body>
+    <!--<amp-auto-ads type="adsense" data-ad-client="ca-pub-5214131895967416"></amp-auto-ads>-->
+    <noscript>
+      <strong>Please enable JavaScript to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script src="https://pv.sohu.com/cityjson?ie=utf-8"></script>
+    <script src="https://webapi.amap.com/maps?v=1.4.14&key=b07d1450c47cab54df0447cdd39aa732"></script>
+    <script type="text/javascript">
+        var ip = returnCitySN["cip"]
+        localStorage.setItem('ip', ip)
+        // console.log(ip)
+        AMap.plugin('AMap.CitySearch', function () {
+            var citySearch = new AMap.CitySearch()
+            citySearch.getLocalCity(function (status, result) {
+                if (status === 'complete' && result.info === 'OK') {
+                    // 查询成功，result即为当前所在城市信息
+                    // console.log(result)
+                    var coordinate={
+                        lon:result.bounds.xc.lng,
+                        lat:result.bounds.xc.lat
+                    }
+                    localStorage.setItem('coordinate', JSON.stringify(coordinate))
+                }
+            })
+        })
+    </script>
+    <script src="https://vidfish.com/static/js/hls.min.js"></script>
+    <script src="https://vidfish.com/static/js/tcplayer.js"></script>
+    <script src="https://vidfish.com/static/js/jquery.min.js"></script>
+    <script src="https://vidfish.com/static/js/intlTelInput.js"></script>
+    <script src="https://vidfish.com/static/js/playr.js"></script>
+    <!--生产-->
+    <script src="https://www.paypal.com/sdk/js?client-id=AeVmU1oP609F2vp_kQQqvu4TiKmLHOjoKKe_JhOp-Yt842r0FMNLT-a4oBJg0ZeeNObwwOwPcXL6QKvx&disable-funding=credit,card"></script>
+    <!--沙盒-->
+    <!--<script src="https://www.paypal.com/sdk/js?client-id=AcFgXh6LrgOLFSvSrnEjVltdeqydJH7Er6cUI78fXhoKpgO6-EC6nGEcopoImn9U5ivU9t2tjWayYTt4&disable-funding=credit,card"></script>-->
+  </body>
+</html>

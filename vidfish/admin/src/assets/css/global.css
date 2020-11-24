@@ -1,0 +1,43 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family:"PingFang SC","Lantinghei SC","Microsoft YaHei",arial,sans-serif,tahoma;
+    color: #444;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+}
+#app{
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+}
+input{
+    border: none;
+    margin: 0;
+    padding: 0;
+
+}
+*:focus {
+    outline: none;
+    background-color: #fff;
+}
+/*::selection{background:#fff; }*/
+/*::-moz-selection{background:#fff;}*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.vidfish-icon-svg{
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}

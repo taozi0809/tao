@@ -1,0 +1,5 @@
+export const TOKEN ='TOKEN'
+export const ISCOLLAPSE = 'ISCOLLAPSE'
+export const AGENTTYPE = 'AGENTTYPE'
+export const AGENTTYPES = 'AGENTTYPES'
+export const PAGES = 'PAGES'

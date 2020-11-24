@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "NotoSerifCJKsc-Black";
+    src: url("NotoSerifCJKsc-Black.eot"); /* IE9 */
+    src: url("NotoSerifCJKsc-Black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    
+    url("NotoSerifCJKsc-Black.woff") format("woff"), /* chrome、firefox */
+    url("NotoSerifCJKsc-Black.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    
+    url("NotoSerifCJKsc-Black.svg#NotoSerifCJKsc-Black") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: normal;
+}
+
+

@@ -1,0 +1,91 @@
+//定位上下左右居中
+@mixin center{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+//定位上下居中
+@mixin centerY{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+//定位左右居中
+@mixin centerX{
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+}
+
+
+//flex 布局
+@mixin flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+//flex 水平布局
+@mixin flexX($type: space-between){
+  display: flex;
+  align-items: center;
+  justify-content: $type;
+}
+//flex 垂直布局
+@mixin flexY($type:space-between){
+  display: flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content: $type;
+}
+
+//宽高
+@mixin wh($width,$height){
+  width: $width;
+  height: $height;
+}
+
+//字体大小 颜色
+@mixin font($size,$color){
+  font-size: $size;
+  color: $color;
+}
+
+//背景图片
+@mixin bg($url){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+//边框阴影
+@mixin boxShadow{
+  box-shadow: 0  0 5px 1px rgba(0,0,0,.1);
+}
+
+//移动端1px问题
+@mixin border($color){
+  border: 1px solid $color;
+  @media screen and (-webkit-min-device-pixel-ratio: 2) {
+    border: 0.5px solid $color;
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 3) {
+    border: 0.3333px solid $color
+  }
+}
+
+
+//定位position
+@mixin relative($width,$height){
+  position: relative;
+  width: $width;
+  height: $height;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
